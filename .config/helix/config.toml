@@ -1,0 +1,26 @@
+theme = "base16_transparent"
+
+[editor]
+line-number = "absolute"
+
+[editor.cursor-shape]
+select = "underline"
+insert = "bar"
+
+[editor.gutters]
+layout = ["line-numbers", "spacer"]
+
+[editor.statusline]
+mode.normal = "NORMAL MODE"
+mode.insert = "INSERT MODE"
+mode.select = "SELECT MODE"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+newline = "·"
+
+[keys.insert.j]
+j = "normal_mode" # Maps `jj` to exit insert mode
+k = "no_op"

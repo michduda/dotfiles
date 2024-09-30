@@ -63,7 +63,7 @@ window#waybar {
     margin-right: 0;
 }
 
-#workspaces button.focused {
+#workspaces button.focused, button.active {
     color: white;
 }
 

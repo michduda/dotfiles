@@ -1,15 +1,15 @@
 {
     "spacing": 0, // Gaps between modules (4px)
 
-    "modules-left": ["sway/workspaces"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["sway/workspaces", "hyprland/workspaces"],
+    "modules-center": ["sway/window", "hyprland/window"],
     "modules-right": ["sway/mode", "group/status-group"],
 
     // Groups configuration
 
     "group/status-group": {
         "orientation": "horizontal",
-        "modules": ["backlight", "pulseaudio", "sway/language", "clock", "battery", "tray"]
+        "modules": ["backlight", "pulseaudio", "hyprland/language", "sway/language", "clock", "battery", "tray"]
     },
 
     // Modules configuration

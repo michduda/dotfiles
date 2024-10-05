@@ -1,3 +1,8 @@
 [user]
 	email = xduda@fi.muni.cz
 	name = Michal Duda
+[init]
+	defaultBranch = main
+[alias]
+	adog = log --all --decorate --oneline --graph
+	dora = log --decorate --oneline --reverse --all

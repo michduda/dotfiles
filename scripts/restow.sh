@@ -1,5 +1,5 @@
 #!/bin/bash
 stowpath="/home/mduda/sources/dotfiles"
-targetpath="/home/mduda/.config"
 
-stow -v -d $stowpath -t $targetpath .config $@
+stow -v -d $stowpath -t /home/mduda/.config config $@
+sudo stow -v -d $stowpath -t /usr/local/bin scripts $@

@@ -61,7 +61,7 @@
     },
 
     "backlight": {
-        "format": "{icon}",
+        "format": "backlight {percent}%",
         "format-icons": ["🌑", "🌒", "🌓", "🌔", "🌕"]
     },
 
@@ -90,16 +90,16 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}{volume:2}%",
+        "format": "{icon}volume {volume:2}%",
         "format-muted": "muted",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 	    "tooltip": false,
         "format-icons": {
-                    "alsa_output.pci-0000_04_00.6.analog-stereo": "💻",
-                     "headphones": "🎧",
-                     "handsfree": "🎧",
-                     "headset": "🎧",
-                     "default": "🐥"
+                    "alsa_output.pci-0000_04_00.6.analog-stereo": "",
+                     "headphones": "headphones ",
+                     "handsfree": "handsfree ",
+                     "headset": "headset ",
+                     "default": ""
         },
         "max-volume": 100
     },
@@ -108,6 +108,16 @@
 		"format": "{short}",
 		"tooltip": false,
 	},
+
+	"hyprland/language": {
+		"format": "{short}",
+		"tooltip": false,
+	},
+
+    "hyprland/window": {
+		"format": "{class}",
+		"tooltip": false
+    },
 
     "sway/window": {
  		"format": "{app_id}",

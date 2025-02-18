@@ -93,6 +93,7 @@
         "format": "{icon}volume {volume:2}%",
         "format-muted": "muted",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "hyprctl dispatch exec -- pavucontrol",
 	    "tooltip": false,
         "format-icons": {
                     "alsa_output.pci-0000_04_00.6.analog-stereo": "",

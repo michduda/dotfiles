@@ -10,12 +10,17 @@ window#waybar {
     border-radius: 20px;
 }
 
-#mode { /* TODO outer layer (or copy #window) */
+window#waybar.empty #mode,
+window#waybar.empty .modules-center {
+    background-color: transparent;
+}
+
+#mode {
     margin: 4px;
     padding: 0 12px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    color: rgba(229, 198, 168, 1);
 }
 
 #status-group, .modules-center, .modules-left { /* outer layers */
@@ -25,7 +30,6 @@ window#waybar {
     border-radius: 20px;
 }
 #button,
-#button:hover,
 #window,
 #clock,
 #battery,
@@ -45,7 +49,7 @@ window#waybar {
     padding: 0 12px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.05);
-    color: white;
+    color: rgba(229, 198, 168, 1);
 }
 
 #battery.critical:not(.charging) {
@@ -58,25 +62,22 @@ window#waybar {
 }
 
 /* WORKSPACES */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
+/* .modules-left > widget:first-child > #workspaces { */
+    /* margin-left: 0; */
+/* } */
 
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
+/* .modules-right > widget:last-child > #workspaces { */
+    /* margin-right: 0; */
+/* } */
+
 
 #workspaces button.focused, button.active {
-    color: white;
+    color: rgba(229, 198, 168, 1);
 }
 
 #workspaces button:hover {
-    color: white;
-    background-color: inherit;
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+  background: none; /* Remove predefined background color (white) */
+  transition: none; /* Disable predefined animations */
 }
-
-/* LEFT UNUSED
-.modules-right {
-    
-}
-*/

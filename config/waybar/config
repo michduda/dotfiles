@@ -1,8 +1,8 @@
 {
     "spacing": 0, // Gaps between modules (4px)
 
-    "modules-left": ["sway/workspaces", "hyprland/workspaces"],
-    "modules-center": ["sway/window", "hyprland/window"],
+    "modules-left": [],
+    "modules-center": [],
     "modules-right": ["sway/mode", "group/status-group"],
 
     // Groups configuration

@@ -1,0 +1,3 @@
+include /home/mduda/.config/sway/themes/default.sh
+include /home/mduda/.config/sway/config.d/*
+include /etc/sway/config.d/*

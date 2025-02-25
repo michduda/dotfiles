@@ -35,17 +35,27 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Workspaces:
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
+bindsym --no-repeat $mod+1 workspace number 1; $sov_on
+bindsym --release $mod+1 $sov_off
+bindsym --no-repeat $mod+2 workspace number 2; $sov_on
+bindsym --release $mod+2 $sov_off
+bindsym --no-repeat $mod+3 workspace number 3; $sov_on
+bindsym --release $mod+3 $sov_off
+bindsym --no-repeat $mod+4 workspace number 4; $sov_on
+bindsym --release $mod+4 $sov_off
+bindsym --no-repeat $mod+5 workspace number 5; $sov_on
+bindsym --release $mod+5 $sov_off
 
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
+bindsym --no-repeat $mod+Shift+1 move container to workspace number 1; $sov_on
+bindsym --release $mod+Shift+1 $sov_off
+bindsym --no-repeat $mod+Shift+2 move container to workspace number 2; $sov_on
+bindsym --release $mod+Shift+2 $sov_off
+bindsym --no-repeat $mod+Shift+3 move container to workspace number 3; $sov_on
+bindsym --release $mod+Shift+3 $sov_off
+bindsym --no-repeat $mod+Shift+4 move container to workspace number 4; $sov_on
+bindsym --release $mod+Shift+4 $sov_off
+bindsym --no-repeat $mod+Shift+5 move container to workspace number 5; $sov_on
+bindsym --release $mod+Shift+5 $sov_off
 
 bindsym $mod+Ctrl+$down workspace next
 bindsym $mod+Ctrl+$up workspace prev

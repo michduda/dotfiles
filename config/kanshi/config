@@ -1,0 +1,25 @@
+profile default {
+	output eDP-1 {
+		enable
+		position 0,0
+	}
+	output HDMI-A-1 {
+		enable
+		position 0,-1080
+	}
+}
+
+profile toponly {
+	output eDP-1 {
+		disable
+	}
+	output HDMI-A-1 {
+		enable
+	}
+}
+
+profile portable {
+	output eDP-1 {
+		enable
+	}
+}

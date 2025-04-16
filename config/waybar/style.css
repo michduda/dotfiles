@@ -15,11 +15,11 @@ window#waybar.empty .modules-center {
     background-color: transparent;
 }
 
-#mode {
+#mode, #submap.adjust {
     margin: 4px;
     padding: 0 12px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: red;
     color: rgba(229, 198, 168, 1);
 }
 

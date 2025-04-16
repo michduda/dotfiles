@@ -25,6 +25,9 @@ bar {
     swaybar_command waybar
 }
 
+bindswitch --locked lid:off exec kanshictl switch default
+bindswitch --locked lid:on exec kanshictl switch toponly
+
 # THEMING
 client.focused $active_title_border \
                $active_title_bg     \
